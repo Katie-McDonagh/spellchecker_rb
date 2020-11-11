@@ -1,5 +1,5 @@
 def spellchecker(string) 
-  word_bank = ['one', 'two']
+  word_bank = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten']
   #if the string contains strings from the array word bank
   #do nothing but print the original string
   word_array = string.split(" ")
