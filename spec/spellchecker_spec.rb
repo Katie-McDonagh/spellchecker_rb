@@ -6,7 +6,7 @@ describe "spellchecker" do
   end
 
   it "returns correctly spelt words" do
-    expect(spellchecker("one two")).to eq("one two")
+    expect(spellchecker("two")).to eq("two")
   end
 
   it "returns a highlighted single uncorrectly spelt word" do
