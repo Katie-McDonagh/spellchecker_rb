@@ -13,4 +13,13 @@ describe "spellchecker" do
     expect(spellchecker("tww")).to eq("~tww~")
   end
 
+  it "returns a highlighted single uncorrectly spelt word" do
+    expect(spellchecker("tww")).to eq("~tww~")
+  end
+
+  it "spellchecks a string of muliple words" do
+    expect(spellchecker("one two")).to eq("one two")
+    expect(spellchecker("one tww")).to eq("one ~tww~")
+  end
+
 end
