@@ -33,6 +33,7 @@ describe "spellchecker" do
 
   it "raises an error if the input is anything but a string" do
     expect{ boiler.spellchecker(1) }.to raise_error("please only provide words")
+    expect{ boiler.spellchecker(true) }.to raise_error("please only provide words")
   end
 
 end

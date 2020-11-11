@@ -5,7 +5,7 @@ class Boiler
   end
 
 def spellchecker(string)
-    fail 'please only provide words' unless string.is_a?(String)
+    raise 'please only provide words' unless string.is_a?(String)
   word_array = string.split(" ")
   checked_word_array = word_array.map { |word| correct_spelling(word)
   }
