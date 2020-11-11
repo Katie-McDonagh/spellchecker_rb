@@ -22,4 +22,8 @@ describe "spellchecker" do
     expect(spellchecker("one tww")).to eq("one ~tww~")
   end
 
+  it "spellchecks a capitalized word" do
+    expect(spellchecker("Two")).to eq("Two")
+  end
+
 end
