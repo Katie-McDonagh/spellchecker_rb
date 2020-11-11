@@ -20,6 +20,7 @@ describe "spellchecker" do
   it "spellchecks a string of muliple words" do
     expect(spellchecker("one two")).to eq("one two")
     expect(spellchecker("one tww")).to eq("one ~tww~")
+    expect(spellchecker("one tww three four five Syx Seven eiight nine ten")).to eq("one ~tww~ three four five ~Syx~ Seven ~eiight~ nine ten")
   end
 
   it "spellchecks a capitalized word" do
