@@ -4,7 +4,7 @@ def spellchecker(string)
   #do nothing but print the original string
   word_array = string.split(" ")
   checked_word_array = word_array.map { |word| 
-    if word_bank.include?(word)
+    if word_bank.include?(word) || word_bank.include?(word.downcase)
       word
     else 
       "~#{word}~"
